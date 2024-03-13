@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "jest/expect-expect": "off",
+    "semi": [2, "always"],
+    "quotes": ["error", "single"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  }
+}
