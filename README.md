@@ -131,7 +131,7 @@ will give:
 Syntax:
 
 ```css
-flexup: <justify-content>/<align-items> <column-gap>/<row-gap> <flex-direction> <flex-wrap>
+flexup: <justify-content>/<align-items> <column-gap>/<row-gap> <flex-direction> <flex-wrap>;
 ```
 
 Available values
