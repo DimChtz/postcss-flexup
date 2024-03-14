@@ -1,0 +1,27 @@
+.parent-1 {
+  flexup: !center/_ wrap 12px;
+}
+
+.parent-2 {
+  flexup: center/_ wrap !12px;
+}
+
+.parent-3 {
+  flexup: !between/!center wrap !12px;
+}
+
+.parent-4 {
+  flexup: around/!center wrap !12px;
+}
+
+.parent-5 {
+  flexup: center/_ !wrap;
+}
+
+.parent-6 {
+  flexup: center/_ !row;
+}
+
+.parent-7 {
+  flexup: center/_ !-col;
+}

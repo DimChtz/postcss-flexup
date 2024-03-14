@@ -33,4 +33,8 @@ describe('postcss-flexup', () => {
   it('Basic #3', async () => {
     await run(...loadFixtures('basic-3'));
   });
+
+  it('Basic #4', async () => {
+    await run(...loadFixtures('basic-4'));
+  });
 });
