@@ -29,7 +29,10 @@
   "author": "Dimitris Chatzis",
   "license": "MIT",
   "homepage": "https://github.com/DimChtz/postcss-flexup",
-  "repository": "github:DimChtz/postcss-flexup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimChtz/postcss-flexup.git"
+  },
   "bugs": "https://github.com/DimChtz/postcss-flexup/issues",
   "files": [
     "dist"
