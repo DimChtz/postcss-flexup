@@ -14,25 +14,23 @@ async function run(input, output, opts = {}) {
   expect(result.warnings()).toHaveLength(0);
 }
 
+function loadFixtures(name) {
+  return [
+    fs.readFileSync(path.join(__dirname, `fixtures/${name}.css`)).toString(),
+    fs.readFileSync(path.join(__dirname, `fixtures/${name}.expected.css`)).toString()
+  ];
+}
+
 describe('postcss-flexup', () => {
   it('Basic #1', async () => {
-    const input = fs.readFileSync(path.join(__dirname, 'fixtures/basic-1.css'));
-    const output = fs.readFileSync(path.join(__dirname, 'fixtures/basic-1.expected.css'));
-
-    await run(input.toString(), output.toString());
+    await run(...loadFixtures('basic-1'));
   });
 
   it('Basic #2', async () => {
-    const input = fs.readFileSync(path.join(__dirname, 'fixtures/basic-2.css'));
-    const output = fs.readFileSync(path.join(__dirname, 'fixtures/basic-2.expected.css'));
-
-    await run(input.toString(), output.toString());
+    await run(...loadFixtures('basic-2'));
   });
 
   it('Basic #3', async () => {
-    const input = fs.readFileSync(path.join(__dirname, 'fixtures/basic-3.css'));
-    const output = fs.readFileSync(path.join(__dirname, 'fixtures/basic-3.expected.css'));
-
-    await run(input.toString(), output.toString());
+    await run(...loadFixtures('basic-3'));
   });
 });
