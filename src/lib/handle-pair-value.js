@@ -1,6 +1,6 @@
 'use strict';
 
-const handleValue = require('./handle-value');
+import handleValue from './handle-value';
 
 /**
  * Handles the values of a pair of CSS properties, considering any important modifiers and mapping values if necessary.
@@ -11,7 +11,7 @@ const handleValue = require('./handle-value');
  * @param {boolean} [mapValues=true] - A flag indicating whether to map values using constants.valuesMapper. Default is true.
  * @returns {string[]} - An array containing CSS styles updated with the new properties.
  */
-module.exports = function handlePairValue(values, keys, styles, mapValues = true) {
+export default function handlePairValue(values, keys, styles, mapValues = true) {
   if (values.length == 1) {
     styles = handleValue(values[0], keys[0], styles, mapValues);
     styles = handleValue(values[0], keys[1], styles, mapValues);
@@ -26,4 +26,4 @@ module.exports = function handlePairValue(values, keys, styles, mapValues = true
     styles = handleValue(values[1], keys[1], styles, mapValues);
 
   return styles;
-};
+}

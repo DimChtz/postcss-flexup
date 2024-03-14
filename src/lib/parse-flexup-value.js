@@ -1,8 +1,8 @@
 'use strict';
 
-const constants = require('./constants');
-const handleValue = require('./handle-value');
-const handlePairValue = require('./handle-pair-value');
+import constants from './constants';
+import handleValue from './handle-value';
+import handlePairValue from './handle-pair-value';
 
 /**
  * Parses a flexbox-related declaration value and generates corresponding CSS styles.
@@ -10,7 +10,7 @@ const handlePairValue = require('./handle-pair-value');
  * @param {string} declValue - The declaration value to parse.
  * @returns {string} - A string containing CSS styles generated from the parsed declaration value.
  */
-module.exports = function parseFlexupValue(declValue) {
+export default function parseFlexupValue(declValue) {
   let styles = [...constants.baseStyles];
   const tokens = declValue.split(' ');
 
@@ -34,4 +34,4 @@ module.exports = function parseFlexupValue(declValue) {
   });
 
   return '\n' + styles.join('\n');
-};
+}

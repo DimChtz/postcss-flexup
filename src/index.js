@@ -1,8 +1,11 @@
 'use strict';
 
-const parseFlexupValue = require('./lib/parse-flexup-value');
+import parseFlexupValue from './lib/parse-flexup-value';
 
-module.exports = () => {
+/**
+ * @returns {import('postcss').Plugin}
+ */
+export default function postcssFlexup() {
   return {
     postcssPlugin: 'postcss-flexup',
     Declaration: {
@@ -12,6 +15,6 @@ module.exports = () => {
       }
     }
   };
-};
+}
 
 module.exports.postcss = true;

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+export default {
   matchAlignValues: /^(_|(!?(center|start|end|between|around)))(\/(_|(!?(center|start|end|between|around))))?$/,
   matchWrapValues: /^!?(wrap|nowrap)$/,
   matchDirValues: /^!?-?(row|col)$/,

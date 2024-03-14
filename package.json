@@ -2,8 +2,20 @@
   "name": "postcss-flexup",
   "version": "1.0.0",
   "description": "PostCSS plugin to make flex easier",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "jsdelivr": "dist/index.mjs",
+  "unpkg": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
   "scripts": {
+    "build": "rollup -c rollup.config.js",
     "test": "jest --coverage && eslint ."
   },
   "keywords": [
@@ -25,14 +37,16 @@
     "url": "https://github.com/DimChtz/postcss-flexup/issues"
   },
   "files": [
-    "index.js",
-    "lib"
+    "dist"
   ],
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-postcss": "^10.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
@@ -44,6 +58,7 @@
     "eslint-plugin-jest": "^27.9.0",
     "jest": "^29.7.0",
     "postcss": "^8.4.35",
+    "rollup": "^4.13.0",
     "semantic-release": "^23.0.2"
   },
   "publishConfig": {
