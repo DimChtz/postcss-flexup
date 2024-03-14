@@ -5,6 +5,8 @@ yarn.lock
 
 src/
 test/
+tests/
+__tests__/
 examples/
 coverage/
 .github/

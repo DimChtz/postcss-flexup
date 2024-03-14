@@ -1,0 +1,21 @@
+.parent {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 12px;
+row-gap: 12px;
+}
+
+.parent {
+display: flex;
+justify-content: center;
+column-gap: 12px;
+row-gap: 16px;
+}
+
+.parent {
+display: flex;
+justify-content: center;
+row-gap: 16px;
+flex-direction: column-reverse;
+}

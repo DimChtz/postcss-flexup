@@ -1,0 +1,11 @@
+.parent {
+  flexup: center/_ wrap 12px;
+}
+
+.parent {
+  flexup: center/_ 12px/16px;
+}
+
+.parent {
+  flexup: center/_ _/16px -col;
+}
