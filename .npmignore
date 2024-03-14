@@ -16,3 +16,4 @@ coverage/
 .eslintrc.json
 .releaserc.json
 jest.config.js
+rollup.config.js
