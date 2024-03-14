@@ -17,4 +17,4 @@ export default function postcssFlexup() {
   };
 }
 
-module.exports.postcss = true;
+postcssFlexup.postcss = true;
