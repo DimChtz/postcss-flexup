@@ -29,20 +29,11 @@
   "author": "Dimitris Chatzis",
   "license": "MIT",
   "homepage": "https://github.com/DimChtz/postcss-flexup",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DimChtz/postcss-flexup.git"
-  },
-  "bugs": {
-    "url": "https://github.com/DimChtz/postcss-flexup/issues"
-  },
+  "repository": "github:DimChtz/postcss-flexup",
+  "bugs": "https://github.com/DimChtz/postcss-flexup/issues",
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^10.0.0"
-  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
