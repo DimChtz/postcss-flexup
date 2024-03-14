@@ -1,6 +1,6 @@
 'use strict';
 
-import parseFlexupValue from './lib/parse-flexup-value';
+import { parseFlexupValue } from './lib/parsers';
 
 /**
  * @returns {import('postcss').Plugin}

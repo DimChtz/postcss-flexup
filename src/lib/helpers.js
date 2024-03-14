@@ -9,9 +9,9 @@
  * whether the token is an important modifier (true) or not (false), and the
  * second element is the token itself without the '!' character if present.
  */
-export default function parseImportantModifier(token) {
+export const parseImportantModifier = (token) => {
   if (token.startsWith('!'))
     return [true, token.slice(1)];
 
   return [false, token];
-}
+};
