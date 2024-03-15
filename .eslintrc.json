@@ -9,9 +9,13 @@
     "semi": [2, "always"],
     "quotes": ["error", "single"]
   },
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "env": {
     "node": true,

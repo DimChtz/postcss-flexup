@@ -17,5 +17,6 @@ coverage/
 .npmrc
 .eslintrc.json
 .releaserc.json
+.babelrc.json
 jest.config.js
 rollup.config.js

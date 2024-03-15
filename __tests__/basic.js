@@ -1,7 +1,8 @@
-const postcss = require('postcss');
-const plugin = require('../dist/index.cjs');
-const path = require('path');
-const fs = require('fs');
+import postcss from 'postcss';
+import plugin from '../src/index.js';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 
 async function process(input, opts = {}) {
   return await postcss([plugin(opts)]).process(input, {from: undefined});
@@ -15,6 +16,9 @@ async function run(input, output, opts = {}) {
 }
 
 function loadFixtures(name) {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+
   return [
     fs.readFileSync(path.join(__dirname, `fixtures/${name}.css`)).toString(),
     fs.readFileSync(path.join(__dirname, `fixtures/${name}.expected.css`)).toString()
