@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/DimChtz/postcss-flexup/compare/v1.0.3...v1.0.4) (2024-03-15)
+
+
+### Bug Fixes
+
+* Enable provenance ([61c093d](https://github.com/DimChtz/postcss-flexup/commit/61c093d2fdd285483977a351f3620b2cef8a1e80))
+
 ## [1.0.3](https://github.com/DimChtz/postcss-flexup/compare/v1.0.2...v1.0.3) (2024-03-14)
 
 ## [1.0.2](https://github.com/DimChtz/postcss-flexup/compare/v1.0.1...v1.0.2) (2024-03-14)

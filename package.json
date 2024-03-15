@@ -1,6 +1,6 @@
 {
   "name": "postcss-flexup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PostCSS plugin to make flex cooler",
   "type": "module",
   "main": "dist/index.cjs",
