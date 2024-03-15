@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/DimChtz/postcss-flexup/compare/v1.0.8...v1.0.9) (2024-03-15)
+
+
+### Bug Fixes
+
+* Remove use strict ([0f0a6f1](https://github.com/DimChtz/postcss-flexup/commit/0f0a6f19ae1babedcb19ec91f79d01bf3b3c1aa2))
+
 ## [1.0.8](https://github.com/DimChtz/postcss-flexup/compare/v1.0.7...v1.0.8) (2024-03-15)
 
 
