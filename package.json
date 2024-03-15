@@ -16,7 +16,10 @@
   },
   "scripts": {
     "build": "rollup --bundleConfigAsCjs -c rollup.config.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage && eslint ."
+    "test": "npm run test:eslint && npm run test:jest",
+    "test:eslint": "eslint src/**/*.js",
+    "test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "fix": "eslint --fix src/**/*.js"
   },
   "keywords": [
     "css",

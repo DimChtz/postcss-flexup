@@ -7,23 +7,19 @@ import * as pckg from './package.json';
 const year = new Date().getFullYear();
 const banner = `//! PostCSS Flexup v${pckg.version} Copyright (c) ${year} ${pckg.author}`;
 
+const getOutputOptions = (file, format) => ({
+  file,
+  format,
+  sourcemap: true,
+  exports: 'default',
+  banner: banner
+});
+
 export default () => [{
   input: 'src/index.js',
   output: [
-    {
-      file: 'dist/index.cjs',
-      format: 'cjs',
-      sourcemap: true,
-      exports: 'default',
-      banner: banner
-    },
-    {
-      file: 'dist/index.mjs',
-      format: 'esm',
-      sourcemap: true,
-      exports: 'default',
-      banner: banner
-    }
+    getOutputOptions('dist/index.cjs', 'cjs'),
+    getOutputOptions('dist/index.mjs', 'esm')
   ],
   plugins: [
     commonjs(),
