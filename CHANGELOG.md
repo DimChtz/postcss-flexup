@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/DimChtz/postcss-flexup/compare/v1.0.5...v1.0.6) (2024-03-15)
+
+
+### Bug Fixes
+
+* Update eslint config ([9bb5a16](https://github.com/DimChtz/postcss-flexup/commit/9bb5a1606b3e7fa18e863f277a24e8dde27c1de0))
+
 ## [1.0.5](https://github.com/DimChtz/postcss-flexup/compare/v1.0.4...v1.0.5) (2024-03-15)
 
 
