@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "rollup --bundleConfigAsCjs -c rollup.config.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage && eslint ."
   },
   "keywords": [
