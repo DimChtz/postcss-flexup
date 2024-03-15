@@ -1,24 +1,34 @@
 {
   "root": true,
-  "extends": [
-    "eslint:recommended",
-    "plugin:jest/recommended"
-  ],
+  "extends": ["eslint:recommended"],
   "rules": {
-    "jest/expect-expect": "off",
     "semi": [2, "always"],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "no-unused-vars": "error",
+    "no-var": "error"
   },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2020,
-    "sourceType": "module",
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "sourceType": "module"
   },
   "env": {
     "node": true,
     "es6": true
-  }
+  },
+  "plugins": [
+    "jest"
+  ],
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*", "src/*.(test|spec).js"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "jest/expect-expect": "off"
+      },
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
