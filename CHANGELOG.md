@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/DimChtz/postcss-flexup/compare/v1.0.4...v1.0.5) (2024-03-15)
+
+
+### Bug Fixes
+
+* Add babel ([2692100](https://github.com/DimChtz/postcss-flexup/commit/2692100cafb49b38981e8bf5d5904d8ff7697e25))
+
 ## [1.0.4](https://github.com/DimChtz/postcss-flexup/compare/v1.0.3...v1.0.4) (2024-03-15)
 
 
