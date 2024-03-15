@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Parses a token to determine if it contains an !important modifier.
  * An important modifier is indicated by starting the token with '!'.

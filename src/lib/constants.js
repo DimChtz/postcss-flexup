@@ -1,5 +1,3 @@
-'use strict';
-
 export default {
   matchAlignValues: /^(_|(!?(center|start|end|between|around)))(\/(_|(!?(center|start|end|between|around))))?$/,
   matchWrapValues: /^!?(wrap|nowrap)$/,
