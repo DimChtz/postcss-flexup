@@ -54,8 +54,5 @@
     "postcss": "^8.4.35",
     "rollup": "^4.13.0",
     "semantic-release": "^23.0.2"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
