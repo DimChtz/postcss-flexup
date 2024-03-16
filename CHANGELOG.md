@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/DimChtz/postcss-flexup/compare/v1.0.10...v1.0.11) (2024-03-16)
+
+
+### Bug Fixes
+
+* Various changes ([1bf11ca](https://github.com/DimChtz/postcss-flexup/commit/1bf11cae7ee4c8486e1ed74bc41ff85b4b42064c))
+
 ## [1.0.10](https://github.com/DimChtz/postcss-flexup/compare/v1.0.9...v1.0.10) (2024-03-15)
 
 
