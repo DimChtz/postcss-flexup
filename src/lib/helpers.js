@@ -8,8 +8,7 @@
  * second element is the token itself without the '!' character if present.
  */
 export const parseImportantModifier = (token) => {
-  if (token.startsWith('!'))
-    return [true, token.slice(1)];
+  if (token.startsWith('!')) return [true, token.slice(1)];
 
   return [false, token];
 };

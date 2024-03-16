@@ -16,9 +16,7 @@
     "node": true,
     "es6": true
   },
-  "plugins": [
-    "jest"
-  ],
+  "plugins": ["jest"],
   "overrides": [
     {
       "files": ["**/__tests__/**/*", "src/*.(test|spec).js"],

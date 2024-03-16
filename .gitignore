@@ -29,7 +29,6 @@ trash
 public
 
 # Editor
-.vscode
 .vscode-test
 *.sublime-project
 *.sublime-workspace
