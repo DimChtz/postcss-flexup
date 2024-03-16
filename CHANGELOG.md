@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/DimChtz/postcss-flexup/compare/v1.0.11...v1.0.12) (2024-03-16)
+
+
+### Bug Fixes
+
+* Add peerDependencies ([927617d](https://github.com/DimChtz/postcss-flexup/commit/927617d6dbc5a5f3d27998d1c2517d59ac348d52))
+
 ## [1.0.11](https://github.com/DimChtz/postcss-flexup/compare/v1.0.10...v1.0.11) (2024-03-16)
 
 
